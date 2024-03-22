@@ -1,0 +1,114 @@
+int p, pa = 0;
+string continuar;
+continuar = "Y";
+Console.WriteLine(" Elevador");
+Console.WriteLine("");
+Console.WriteLine("0 -- Planta Baja");
+Console.WriteLine("1 -- Primer Piso");
+Console.WriteLine("2 -- Segundo Piso");
+Console.WriteLine("3 -- Tercer Piso");
+Console.WriteLine("4 -- Cuarto Piso");
+Console.WriteLine("5 -- Quinto Piso");
+Console.WriteLine("6 -- Sexto Piso");
+Console.WriteLine("7 -- Septimo Piso");
+Console.WriteLine("8 -- Azotea");
+while (continuar == "Y")
+{
+    Console.WriteLine("");
+    Console.Write("Piso actual: " + pa + "\n");
+    Console.Write("Seleccione el piso a donde quiere ir: ");
+    p = int.Parse(Console.ReadLine());
+    switch (p)
+    {
+        case 0:
+            if (p < pa)
+            {
+                Console.WriteLine("Baja a Planta baja");
+            }
+            break;
+        case 1:
+            if (p > pa)
+            {
+                Console.WriteLine("Sube al primer piso");
+            }
+            else
+            {
+                Console.WriteLine("Baja al primer piso");
+            }
+            break;
+        case 2:
+            if (p > pa)
+            {
+                Console.WriteLine("Sube al segundo piso");
+            }
+            else
+            {
+                Console.WriteLine("Baja al segundo piso");
+            }
+            break;
+        case 3:
+            if (p > pa)
+            {
+                Console.WriteLine("Sube al tercer piso");
+            }
+            else
+            {
+                Console.WriteLine("Baja al tercer piso");
+            }
+            break;
+        case 4:
+            if (p > pa)
+            {
+                Console.WriteLine("Sube al cuarto piso");
+            }
+            else
+            {
+                Console.WriteLine("Baja al cuarto piso");
+            }
+            break;
+        case 5:
+            if (p > pa)
+            {
+                Console.WriteLine("Sube al quinto piso");
+            }
+            else
+            {
+                Console.WriteLine("Baja al quinto piso");
+            }
+            break;
+        case 6:
+            if (p > pa)
+            {
+                Console.WriteLine("Sube al sexto piso");
+            }
+            else
+            {
+                Console.WriteLine("Baja al sexto piso");
+            }
+            break;
+        case 7:
+            if (p > pa)
+            {
+                Console.WriteLine("Sube al septimo piso");
+            }
+            else
+            {
+                Console.WriteLine("Baja al septimo piso");
+            }
+            break;
+        case 8:
+            if (p > pa)
+            {
+                Console.WriteLine("Sube a la azotea");
+            }
+            else
+            {
+                Console.WriteLine("Baja de la azotea");
+            }
+            break;
+    }
+    pa = p;
+    Console.WriteLine("");
+    Console.Write("¿Desea ir a otro piso? Presione Y para sí y cualquier tecla para salir: ");
+    continuar = Console.ReadLine();
+}
